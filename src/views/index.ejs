@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Nodedoro | Pomodoro Timer</title>
+  </head>
+  <body>
+    <div id="add-pomodoro" class="add-pomodoro__window">
+      <form method="POST" action="/create-pomodoro">
+        <input type="text" placeholder="Title" name="title" />
+        <input type="number" placeholder="Duration" name="duration" />
+        <input type="number" placeholder="Break" name="break" />
+        <input type="number" placeholder="Long Break" name="longBreak" />
+        <input type="submit" value="send" />
+      </form>
+    </div>
+    <%- include("partials/aside") %>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "nodedoro-timer",
+  "version": "1.0.0",
+  "description": "A web Pomodoro app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [
+    "pomodoro",
+    "timer"
+  ],
+  "author": "Tomas Malleret",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}

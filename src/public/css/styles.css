@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -- VARIABLES -- */
+
+body {
+  --light-color: #fafafa;
+  --bg-color: #eee;
+}
+
+/* -- BASIC -- */
+
+body {
+  background-color: var(--bg-color);
+  font-family: Montserrat, Roboto, sans-serif;
+}
+
+/* -- MODAL WINDOWS -- */
+
+.add-pomodoro__window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: var(--light-color);
+  display: none;
+}
+
+/* -- ASIDE -- */
+
+.aside {
+  background-color: var(--light-color);
+  height: 100vh;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.aside__pomodoro-list-title,
+.aside__todo-list-title {
+  font-size: 1.6rem;
+}
+
+.pomodoro-list__element,
+.todo-list__element {
+  display: flex;
+  gap: 6px;
+  margin-left: 12px;
+}
+
+.pomodoro-list__title,
+.todo-list__tiltle {
+  font-size: 1em;
+}

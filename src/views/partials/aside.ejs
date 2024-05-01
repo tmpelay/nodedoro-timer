@@ -1,0 +1,33 @@
+<aside class="aside">
+  <div class="aside__pomodoro-list-container">
+    <h2 class="aside__pomodoro-list-title">Pomodoros</h2>
+    <ul id="pomodoros-list" class="aside__pomodoro-list">
+      <% pomodoros.map((item) => {%>
+      <li class="pomodoro-list__element">
+        <input
+          id="<%= item[0] %>"
+          class="pomodoro-list__checkbox"
+          type="checkbox"
+        />
+        <label for="<%= item[0] %>" class="pomodoro-list__title">
+          <%= item[1] %>
+        </label>
+      </li>
+      <%})%>
+      <li class="pomodoro-list__element">
+        <button class="pomodoro-list__button" onclick="openAddPomodoro()">
+          Add Pomodoro
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="aside__todo-list-container">
+    <h2 class="aside__todo-list-title">To-Do List</h2>
+    <ul class="aside__todo-list">
+      <li class="todo-list__element">
+        <input id="todo-check" class="todo-list__checkbox" type="checkbox" />
+        <label for="todo-check" class="todo-list__title">Finish Nodedoro</label>
+      </li>
+    </ul>
+  </div>
+</aside>
